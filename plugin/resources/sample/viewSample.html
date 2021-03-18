@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Example view for SmartCloud-y Connections - Community App 2.0</title>
+
+<script type="text/javascript">
+ console.log("loading iframe");
+
+ window.onload = function() {
+
+  document.getElementById("host").innerHTML = location.host;
+
+  console.log("onload");
+
+  try {
+   window.addEventListener('message', function(evt) {
+    console.log("Got msg");
+    console.log(evt.data);
+    document.getElementById("contextId").innerHTML = JSON.stringify(evt.data, null, 3);
+   }, false);
+  } catch (e) {
+   console.log(e);
+  }
+
+  parent.postMessage("appReady", "*");
+
+ }
+</script>
+</head>
+<body style="background-color: bisque;">
+ <h2>A test application running at <span id="host"></span>.</h2> </p>
+
+ <p> The following context is passed from Communities: </p>
+ <pre id="contextId"></pre>
+</body>
+</html>

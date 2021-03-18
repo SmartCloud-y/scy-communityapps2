@@ -1,0 +1,44 @@
+{
+    "name": "Cloud-y Apps20 Sample",
+    "title": "Cloud-y Apps20 Sample",
+    "description": "Cloud-y Apps20 Sample widget for Connections Communities",
+    "app_id": "com.cloud_y.apps20.sample",
+    "services": [
+        "Communities"
+    ],
+    "state": "disabled",
+    "extensions": [
+        {
+            "name": "Cloud-y Apps20 Sample Widget",
+            "description": "To showcase Apps20 Capabilities",
+            "ext_id": "com.cloud_y.apps20.sample.widget",
+            "type": "community_widget",
+            "payload": {
+                "urls": {
+                    "icon_url": "https://www.factor-y.com/favicon.ico",
+                    "url": "https://www.factor-y.com"
+                },
+                "defId": "Cloud-y Apps20 Sample Widget",
+                "themes": "wpthemeNarrow wpthemeWide wpthemeBanner",
+                "modes": "view fullpage",
+                "primaryWidget": "true",
+                "showInPalette": "true",
+                "itemSet": [
+                    {
+                        "name": "url",
+                        "value": "https://www.cloud-y.com"
+                    },
+                    {
+                        "name": "height",
+                        "value": "500px"
+                    },
+                    {
+                        "name": "width",
+                        "value": "100%"
+                    }
+                ],
+                "url": "/connections/resources/web/com.cloud_y.apps20.web.resources/widget/communityApp.xml"
+            }
+        }
+    ]
+}

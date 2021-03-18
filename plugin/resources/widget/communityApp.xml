@@ -1,0 +1,49 @@
+<iw:iwidget name="scyCommunityApp20" xmlns:iw="http://www.ibm.com/xmlns/prod/iWidget"
+        supportedModes="view edit fullpage search help" 
+        mode="view" lang="en"
+        iScope="(lconn.core.dynamiciwidget.create('com.cloud_y.apps20.widget.communityApp'))">
+	<iw:content mode="view">
+        <![CDATA[        
+            <div class="scyApp20container">
+				<div class="iframeWrapper"></div>
+			</div>
+			<div class="fatalError" class="fatalError" style="display: none">
+				<h3 class="errorTitle"></h3>
+				<p class="errorDesc"></p>
+			</div>
+        ]]>
+	</iw:content>
+	<iw:content mode="edit">
+        <![CDATA[        
+            <div class="scyApp20container">
+               <div class="iframeWrapper"></div>
+            </div>
+            <div class="fatalError" class="fatalError" style="display: none">
+                <h3 class="errorTitle"></h3>
+                <p class="errorDesc"></p>
+            </div>
+        ]]>
+   </iw:content>
+   <iw:content mode="fullpage">
+        <![CDATA[        
+            <div class="scyApp20container">
+               <div class="iframeWrapper"></div>
+            </div>
+            <div class="fatalError" class="fatalError" style="display: none">
+                <h3 class="errorTitle"></h3>
+                <p class="errorDesc"></p>
+            </div>
+        ]]>
+   </iw:content>
+   <iw:content mode="search">
+        <![CDATA[        
+            <div class="scyApp20container">
+               <div class="iframeWrapper"></div>
+            </div>
+            <div class="fatalError" class="fatalError" style="display: none">
+                <h3 class="errorTitle"></h3>
+                <p class="errorDesc"></p>
+            </div>
+        ]]>
+   </iw:content>
+</iw:iwidget>
