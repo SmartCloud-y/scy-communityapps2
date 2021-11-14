@@ -203,7 +203,7 @@ dojo.extend(com.cloud_y.apps20.widget.communityApp, {
      * Enhanced setupIFrame allows for multiple urls and "modes".
      */
     setupIFrame: function (urlToSetup, mode) {
-        this._widgetDebug("[T] setupIFrame");
+        this._widgetDebug("[T] setupIFrame for " + mode);
 
         // Safe defaults / back to default url.
         var iFrameUrl = urlToSetup || this.extUrl;
