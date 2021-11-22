@@ -1,4 +1,5 @@
 libraries {
+    scm {}
     maven {}
 }
 
