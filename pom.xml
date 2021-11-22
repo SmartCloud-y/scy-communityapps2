@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cloud_y.cnx</groupId>
+	<artifactId>scy-communityapps2</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+	   <bundle-version>21.2.0.0</bundle-version>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<release>11</release>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.0</version>
+				<configuration>
+                    <finalName>com.cloud_y.apps20_${bundle-version}</finalName>
+    				<archive>
+						<!-- <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile> -->
+						<manifestEntries>
+							<Bundle-Vendor>Factor-y</Bundle-Vendor>
+							<Bundle-SymbolicName>com.cloud_y.apps20;singleton:=true
+							</Bundle-SymbolicName>
+							<Bundle-Name>SmartCloud-y Community Apps 2.0</Bundle-Name>
+							<Bundle-Version>${bundle-version}</Bundle-Version>
+							<Bundle-RequiredExecutionEnvironment>J2SE-1.5</Bundle-RequiredExecutionEnvironment>
+							<Bundle-ManifestVersion>2</Bundle-ManifestVersion>
+							<Bundle-ActivationPolicy>lazy</Bundle-ActivationPolicy>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
