@@ -1,5 +1,5 @@
 libraries {
-    scm {}
+/*   scm {} */
     maven {}
 }
 

@@ -1,2 +1,2 @@
-checkoutSources()
+checkout()
 build()
