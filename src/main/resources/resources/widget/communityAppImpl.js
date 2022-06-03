@@ -253,8 +253,8 @@ dojo.extend(com.cloud_y.apps20.widget.communityApp, {
             }
 
             // Finally Initialize the iFrame
-
-            var iframeWrapperNode = this.iContext.getElementByClass("iframeWrapper")[0];
+            var iframewrapperdiv = this.iContext.getElementByClass(mode)[0];
+            var iframeWrapperNode = iframewrapperdiv.getElementByClass("iframeWrapper")[0];
 
             // Update or replace existing iframe in case of mode switching events
             // New need as previous widget didn't. Allow, cleaning up prevents memory leaks
